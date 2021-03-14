@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/input"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/encoding"
+            android:layout_width="142dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="Encryption"
+            android:padding="20dp"
+            android:text="Encryption (Encoding)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/input" />
+
+        <Button
+            android:id="@+id/decoding"
+            android:layout_width="142dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="70dp"
+            android:onClick="Decryption"
+            android:padding="20dp"
+            android:text="Decryption (Decoding)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.82"
+            app:layout_constraintStart_toEndOf="@+id/encoding"
+            app:layout_constraintTop_toTopOf="@+id/input" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/output"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/encoding"
+        app:layout_constraintVertical_bias="0.0" />
+
+</LinearLayout>
